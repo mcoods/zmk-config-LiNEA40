@@ -57,7 +57,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -101,7 +101,7 @@
 &kp Q           &kp L         &kp U               &kp COMMA  &kp PERIOD                               &kp F        &kp W  &kp R                &kp Y          &kp P
 &kp E           &kp I         &kp A               &kp O      &kp MINUS                                &kp K        &kp T  &kp N                &kp S          &lt 1 H
 &kp LEFT_SHIFT  &kp Z         &kp X               &kp C      &kp V                                    &kp G        &kp D  &kp M                &kp J          &lt 4 B
-&mt LCTRL ESC   &kp LEFT_WIN  &mt LEFT_ALT GRAVE  &kp INS    &lt 1 ENTER  &lt 2 TAB    &kp BACKSPACE  &lt 3 SPACE         &lt 6 RIGHT_BRACKET  &kp BACKSLASH  &to 4
+&kp LCTRL       &kp LEFT_WIN  &mt LEFT_ALT GRAVE  &kp INS    &lt 1 ENTER  &lt 2 TAB    &kp BACKSPACE  &lt 3 SPACE         &lt 6 RIGHT_BRACKET  &kp BACKSLASH  &to 4
             >;
 
             sensor-bindings = <&mouse_scrl SCRL_DOWN SCRL_UP>;
@@ -137,10 +137,10 @@
 
         CURSOR {
             bindings = <
-&trans     &kp RIGHT_BRACKET      &kp LS(N7)            &kp NON_US_HASH      &kp INT3                            &kp LS(EQUAL)     &kp PAGE_UP  &kp UP      &kp PAGE_DOWN  &trans
-&kp CAPS   &kp LS(N8)             &kp LS(NUMBER_2)      &kp LS(N9)           &kp LS(NUMBER_3)                    &kp LEFT_BRACKET  &kp LEFT     &kp DOWN    &kp RIGHT      &kp SPACE
-&kp SPACE  &kp LS(RIGHT_BRACKET)  &kp LS(LEFT_BRACKET)  &kp LS(NON_US_HASH)  &kp LS(N4)                          &kp EQUAL         &kp HOME     &kp INSERT  &kp END        &kp BSLH
-&trans     &trans                 &trans                &trans               &trans            &trans    &trans  &trans                         &kp DOT     &kp ENTER      &kp QUESTION
+&kp ESCAPE  &kp RIGHT_BRACKET      &kp LS(N7)            &kp NON_US_HASH      &kp INT3                            &kp LS(EQUAL)     &kp PAGE_UP  &kp UP      &kp PAGE_DOWN  &trans
+&kp CAPS    &kp LS(N8)             &kp LS(NUMBER_2)      &kp LS(N9)           &kp LS(NUMBER_3)                    &kp LEFT_BRACKET  &kp LEFT     &kp DOWN    &kp RIGHT      &kp SPACE
+&kp SPACE   &kp LS(RIGHT_BRACKET)  &kp LS(LEFT_BRACKET)  &kp LS(NON_US_HASH)  &kp LS(N4)                          &kp EQUAL         &kp HOME     &kp INSERT  &kp END        &kp BSLH
+&trans      &trans                 &trans                &trans               &trans            &trans    &trans  &trans                         &kp DOT     &kp ENTER      &kp QUESTION
             >;
         };
 
